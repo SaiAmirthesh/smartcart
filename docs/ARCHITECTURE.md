@@ -25,7 +25,7 @@ flowchart TB
 
     subgraph Transport["Network & Communication"]
         WIFI["Wi-Fi / REST API (HTTP)"]
-        ESP -->|POST /cart/{id}/add/{uid}| WIFI
+        ESP -->|"POST /cart/{id}/add/{uid}"| WIFI
     end
 
     subgraph Backend["Backend Subsystem (FastAPI)"]

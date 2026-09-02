@@ -7,7 +7,7 @@ SmartCart is an intelligent shopping assistance platform that eliminates checkou
 
 ---
 
-## 🚀 Quick Visual Comparison
+## Quick Visual Comparison
 
 ```mermaid
 flowchart LR
@@ -28,17 +28,17 @@ flowchart LR
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- **⚡ RFID-Based Product Identification**: Instant product lookup using 13.56 MHz RFID tags & ESP32.
-- **📊 Real-Time Digital Cart**: Dynamic cart total calculations and session tracking.
-- **💳 Autonomous Billing & Checkout**: One-click checkout generating transaction IDs and digital receipts.
-- **🖥️ Shopper Dashboard**: React + Vite responsive UI for live cart visibility.
-- **🤖 Decoupled Robotics Integration**: Modular API interface designed for future ROS 2 autonomous navigation.
+- **RFID-Based Product Identification**: Instant product lookup using 13.56 MHz RFID tags & ESP32.
+- **Real-Time Digital Cart**: Dynamic cart total calculations and session tracking.
+- **Autonomous Billing & Checkout**: One-click checkout generating transaction IDs and digital receipts.
+- **Shopper Dashboard**: React + Vite responsive UI for live cart visibility.
+- **Decoupled Robotics Integration**: Modular API interface designed for future ROS 2 autonomous navigation.
 
 ---
 
-## 🏗️ High-Level System Architecture
+## High-Level System Architecture
 
 SmartCart uses a modular, decoupled architecture where telemetry acquisition (ESP32) is isolated from business and billing logic (FastAPI).
 
@@ -50,7 +50,7 @@ flowchart LR
     API -.- ROS["ROS 2 Autonomous Platform (Future)"]
 ```
 
-> 📖 **Deep Dive Documentation**: For detailed ER diagrams, sequence flows, hardware pinouts, state machines, and ROS 2 integration specs, see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+> **Deep Dive Documentation**: For detailed ER diagrams, sequence flows, hardware pinouts, state machines, and ROS 2 integration specs, see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ---
 
@@ -66,7 +66,7 @@ flowchart LR
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 smartcart/
@@ -90,7 +90,7 @@ smartcart/
 
 ---
 
-## ⚡ Quick Start & Local Setup
+## Quick Start & Local Setup
 
 ### 1. Prerequisites
 - Python 3.10+
@@ -130,7 +130,7 @@ npm run dev
 
 ---
 
-## 🗺️ Development Roadmap & Status
+## Development Roadmap & Status
 
 | Phase | Description | Status |
 | :---: | :--- | :---: |
@@ -144,7 +144,7 @@ npm run dev
 
 ---
 
-## 👥 Team & Domain Division
+## Team & Domain Division
 
 - **AI & Autonomous Navigation**: Human detection, tracking, LiDAR SLAM, ROS 2 integration.
 - **Backend & Autonomous Billing**: FastAPI architecture, database design, billing engine, transaction security.
@@ -152,6 +152,6 @@ npm run dev
 
 ---
 
-## 📄 License & Vision
+## License & Vision
 
 SmartCart is built to transform the retail supermarket experience: **Follow. Shop. Pay. Go.**
