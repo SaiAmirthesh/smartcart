@@ -1,0 +1,201 @@
+[6.096s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[6.097s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x79329f06d850>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79329f06d760>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79329f06d760>>)
+[6.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[6.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[6.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[6.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[6.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[6.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[6.636s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws'
+[6.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[6.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[6.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[6.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[6.638s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[6.638s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[6.638s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[6.638s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[6.638s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[6.971s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[6.971s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[6.971s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[6.971s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[6.971s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[6.972s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[6.972s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[6.972s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[6.973s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[6.973s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[6.973s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[6.973s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[6.974s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[6.974s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[6.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[6.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[6.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[6.985s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[6.985s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[6.985s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[6.985s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[6.985s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[6.985s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[6.986s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[6.986s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[6.986s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[6.986s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[6.986s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[6.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_description) by extensions ['ignore', 'ignore_ament_install']
+[6.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_description) by extension 'ignore'
+[6.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_description) by extension 'ignore_ament_install'
+[6.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_description) by extensions ['colcon_pkg']
+[6.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_description) by extension 'colcon_pkg'
+[6.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_description) by extensions ['colcon_meta']
+[6.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_description) by extension 'colcon_meta'
+[6.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_description) by extensions ['ros']
+[6.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_description) by extension 'ros'
+[7.004s] DEBUG:colcon.colcon_core.package_identification:Package 'src/smartcart_description' with type 'ros.ament_cmake' and name 'smartcart_description'
+[7.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[7.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_gazebo) by extension 'ignore'
+[7.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_gazebo) by extension 'ignore_ament_install'
+[7.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_gazebo) by extensions ['colcon_pkg']
+[7.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_gazebo) by extension 'colcon_pkg'
+[7.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_gazebo) by extensions ['colcon_meta']
+[7.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_gazebo) by extension 'colcon_meta'
+[7.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_gazebo) by extensions ['ros']
+[7.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/smartcart_gazebo) by extension 'ros'
+[7.014s] DEBUG:colcon.colcon_core.package_identification:Package 'src/smartcart_gazebo' with type 'ros.ament_cmake' and name 'smartcart_gazebo'
+[7.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[7.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[7.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[7.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[7.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[7.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[7.412s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[7.556s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install
+[7.580s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 319 installed packages in /opt/ros/jazzy
+[7.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[10.019s] Level 5:colcon.colcon_core.verb:set package 'smartcart_description' build argument 'cmake_args' from command line to 'None'
+[10.019s] Level 5:colcon.colcon_core.verb:set package 'smartcart_description' build argument 'cmake_target' from command line to 'None'
+[10.019s] Level 5:colcon.colcon_core.verb:set package 'smartcart_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[10.019s] Level 5:colcon.colcon_core.verb:set package 'smartcart_description' build argument 'cmake_clean_cache' from command line to 'False'
+[10.019s] Level 5:colcon.colcon_core.verb:set package 'smartcart_description' build argument 'cmake_clean_first' from command line to 'False'
+[10.019s] Level 5:colcon.colcon_core.verb:set package 'smartcart_description' build argument 'cmake_force_configure' from command line to 'False'
+[10.019s] Level 5:colcon.colcon_core.verb:set package 'smartcart_description' build argument 'ament_cmake_args' from command line to 'None'
+[10.019s] Level 5:colcon.colcon_core.verb:set package 'smartcart_description' build argument 'catkin_cmake_args' from command line to 'None'
+[10.019s] Level 5:colcon.colcon_core.verb:set package 'smartcart_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[10.019s] DEBUG:colcon.colcon_core.verb:Building package 'smartcart_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description', 'merge_install': False, 'path': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_description', 'symlink_install': False, 'test_result_base': None}
+[10.020s] Level 5:colcon.colcon_core.verb:set package 'smartcart_gazebo' build argument 'cmake_args' from command line to 'None'
+[10.020s] Level 5:colcon.colcon_core.verb:set package 'smartcart_gazebo' build argument 'cmake_target' from command line to 'None'
+[10.020s] Level 5:colcon.colcon_core.verb:set package 'smartcart_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[10.020s] Level 5:colcon.colcon_core.verb:set package 'smartcart_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[10.020s] Level 5:colcon.colcon_core.verb:set package 'smartcart_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[10.020s] Level 5:colcon.colcon_core.verb:set package 'smartcart_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[10.020s] Level 5:colcon.colcon_core.verb:set package 'smartcart_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[10.020s] Level 5:colcon.colcon_core.verb:set package 'smartcart_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[10.020s] Level 5:colcon.colcon_core.verb:set package 'smartcart_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[10.020s] DEBUG:colcon.colcon_core.verb:Building package 'smartcart_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo', 'merge_install': False, 'path': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_gazebo', 'symlink_install': False, 'test_result_base': None}
+[10.021s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[10.022s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[10.023s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_description' with build type 'ament_cmake'
+[10.023s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_description'
+[10.122s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[10.123s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.123s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.205s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_gazebo' with build type 'ament_cmake'
+[10.206s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_gazebo'
+[10.206s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.206s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo -- -j4 -l4
+[10.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description -- -j4 -l4
+[12.121s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo -- -j4 -l4
+[12.164s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo
+[12.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description -- -j4 -l4
+[12.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description
+[12.254s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(smartcart_gazebo)
+[12.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo
+[12.341s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo' for CMake module files
+[12.343s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo' for CMake config files
+[12.344s] Level 1:colcon.colcon_core.shell:create_environment_hook('smartcart_gazebo', 'cmake_prefix_path')
+[12.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/hook/cmake_prefix_path.ps1'
+[12.365s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/hook/cmake_prefix_path.dsv'
+[12.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/hook/cmake_prefix_path.sh'
+[12.385s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/bin'
+[12.385s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/lib/pkgconfig/smartcart_gazebo.pc'
+[12.386s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/lib/python3.12/site-packages'
+[12.387s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/bin'
+[12.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.ps1'
+[12.391s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.dsv'
+[12.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.sh'
+[12.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.bash'
+[12.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.zsh'
+[12.436s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/colcon-core/packages/smartcart_gazebo)
+[12.438s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(smartcart_gazebo)
+[12.438s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo' for CMake module files
+[12.441s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo' for CMake config files
+[12.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('smartcart_gazebo', 'cmake_prefix_path')
+[12.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/hook/cmake_prefix_path.ps1'
+[12.443s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/hook/cmake_prefix_path.dsv'
+[12.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/hook/cmake_prefix_path.sh'
+[12.447s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/bin'
+[12.448s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/lib/pkgconfig/smartcart_gazebo.pc'
+[12.449s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/lib/python3.12/site-packages'
+[12.451s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/bin'
+[12.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.ps1'
+[12.454s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.dsv'
+[12.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.sh'
+[12.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.bash'
+[12.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.zsh'
+[12.459s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/colcon-core/packages/smartcart_gazebo)
+[12.461s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(smartcart_description)
+[12.462s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description' for CMake module files
+[12.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description
+[12.464s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description' for CMake config files
+[12.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('smartcart_description', 'cmake_prefix_path')
+[12.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/hook/cmake_prefix_path.ps1'
+[12.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/hook/cmake_prefix_path.dsv'
+[12.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/hook/cmake_prefix_path.sh'
+[12.469s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/bin'
+[12.469s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/lib/pkgconfig/smartcart_description.pc'
+[12.470s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/lib/python3.12/site-packages'
+[12.472s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/bin'
+[12.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.ps1'
+[12.474s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.dsv'
+[12.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.sh'
+[12.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.bash'
+[12.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.zsh'
+[12.477s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/colcon-core/packages/smartcart_description)
+[12.478s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(smartcart_description)
+[12.478s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description' for CMake module files
+[12.480s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description' for CMake config files
+[12.480s] Level 1:colcon.colcon_core.shell:create_environment_hook('smartcart_description', 'cmake_prefix_path')
+[12.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/hook/cmake_prefix_path.ps1'
+[12.481s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/hook/cmake_prefix_path.dsv'
+[12.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/hook/cmake_prefix_path.sh'
+[12.483s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/bin'
+[12.483s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/lib/pkgconfig/smartcart_description.pc'
+[12.484s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/lib/python3.12/site-packages'
+[12.485s] Level 1:colcon.colcon_core.environment:checking '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/bin'
+[12.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.ps1'
+[12.487s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.dsv'
+[12.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.sh'
+[12.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.bash'
+[12.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.zsh'
+[12.491s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/colcon-core/packages/smartcart_description)
+[12.492s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.492s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.493s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.493s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.563s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.564s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.564s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.859s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.861s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/local_setup.ps1'
+[12.907s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/_local_setup_util_ps1.py'
+[12.928s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/setup.ps1'
+[12.932s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/local_setup.sh'
+[12.958s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/_local_setup_util_sh.py'
+[12.960s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/setup.sh'
+[12.963s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/local_setup.bash'
+[13.002s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/setup.bash'
+[13.005s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/local_setup.zsh'
+[13.042s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/setup.zsh'

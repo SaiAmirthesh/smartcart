@@ -98,6 +98,21 @@ def generate_launch_description():
 
 
     # =========================
+    # CAMERA BRIDGE
+    # =========================
+
+    camera_bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        arguments=[
+            '/camera/image_raw@sensor_msgs/msg/Image@gz.msgs.Image',
+            '/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo'
+        ],
+        output='screen'
+    )
+
+
+    # =========================
     # LAUNCH EVERYTHING
     # =========================
 
@@ -105,5 +120,6 @@ def generate_launch_description():
         gazebo,
         robot_state_publisher,
         spawn_robot,
-        lidar_bridge
+        lidar_bridge,
+        camera_bridge
     ])
