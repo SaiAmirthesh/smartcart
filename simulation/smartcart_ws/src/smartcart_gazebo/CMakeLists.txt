@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.8)
-project(smartcart_description)
+project(smartcart_gazebo)
 
 find_package(ament_cmake REQUIRED)
 
 install(
   DIRECTORY
-    urdf
     launch
-    meshes
+    worlds
+    models
     config
   DESTINATION share/${PROJECT_NAME}
 )
