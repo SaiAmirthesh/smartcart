@@ -1,555 +1,94 @@
-import { useState } from "react";
-import "./App.css";
+import { useState } from 'react';
+import { Header } from './shared/components/Header';
+import { ProductTable } from './features/cart/components/ProductTable';
+import { AddProductDialog } from './features/cart/components/AddProductDialog';
+import { BillingSummary } from './features/billing/components/BillingSummary';
+import { CheckoutModal } from './features/checkout/components/CheckoutModal';
+import { useCart } from './features/cart/hooks/useCart';
+import { DEFAULT_CART_ID } from './shared/config/constants';
+import type { CatalogProduct } from './shared/config/constants';
 
-type Product = {
-  id: string;
-  name: string;
-  category: string;
-  price: number;
-  quantity: number;
-  tagId: string;
-};
+export function App() {
+  const {
+    items,
+    totals,
+    updateQuantity,
+    removeItem,
+    addItem,
+    clearCart,
+    resetToDefault,
+  } = useCart();
 
-type Activity = {
-  id: number;
-  message: string;
-  time: string;
-  type: "rfid" | "cart" | "system" | "payment";
-};
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [isCheckoutModalOpen, setIsCheckoutModalOpen] = useState(false);
 
-const initialProducts: Product[] = [
-  {
-    id: "P001",
-    name: "Milk 1L",
-    category: "Dairy",
-    price: 62,
-    quantity: 1,
-    tagId: "RFID-A91F2C",
-  },
-  {
-    id: "P002",
-    name: "Bread",
-    category: "Bakery",
-    price: 45,
-    quantity: 2,
-    tagId: "RFID-B82E19",
-  },
-  {
-    id: "P003",
-    name: "Chicken Breast",
-    category: "Meat",
-    price: 280,
-    quantity: 1,
-    tagId: "RFID-C71D42",
-  },
-];
-
-const initialActivity: Activity[] = [
-  {
-    id: 1,
-    message: "Chicken Breast added to cart",
-    time: "10:42:18 PM",
-    type: "rfid",
-  },
-  {
-    id: 2,
-    message: "RFID tag RFID-C71D42 detected",
-    time: "10:42:17 PM",
-    type: "rfid",
-  },
-  {
-    id: 3,
-    message: "Cart connected successfully",
-    time: "10:41:52 PM",
-    type: "system",
-  },
-];
-
-function App() {
-  const [products, setProducts] = useState<Product[]>(initialProducts);
-  const [activities, setActivities] = useState<Activity[]>(initialActivity);
-  const [rfidConnected] = useState(true);
-  const [cartFollowing, setCartFollowing] = useState(false);
-  const [checkoutDone, setCheckoutDone] = useState(false);
-
-  const totalItems = products.reduce(
-    (total, product) => total + product.quantity,
-    0
-  );
-
-  const subtotal = products.reduce(
-    (total, product) => total + product.price * product.quantity,
-    0
-  );
-
-  const tax = subtotal * 0.05;
-  const total = subtotal + tax;
-
-  const formatCurrency = (value: number) => {
-    return `₹${value.toFixed(2)}`;
+  const handleAddProduct = (product: CatalogProduct) => {
+    addItem(product, 1);
   };
 
-  const updateQuantity = (id: string, change: number) => {
-    setProducts((currentProducts) =>
-      currentProducts
-        .map((product) =>
-          product.id === id
-            ? {
-              ...product,
-              quantity: Math.max(0, product.quantity + change),
-            }
-            : product
-        )
-        .filter((product) => product.quantity > 0)
-    );
+  const handleStartCheckout = () => {
+    if (items.length === 0) return;
+    setIsCheckoutModalOpen(true);
   };
 
-  const removeProduct = (id: string) => {
-    const product = products.find((item) => item.id === id);
-
-    setProducts((currentProducts) =>
-      currentProducts.filter((product) => product.id !== id)
-    );
-
-    if (product) {
-      addActivity(`${product.name} removed from cart`, "cart");
-    }
-  };
-
-  const addActivity = (
-    message: string,
-    type: Activity["type"]
-  ) => {
-    const newActivity: Activity = {
-      id: Date.now(),
-      message,
-      time: new Date().toLocaleTimeString(),
-      type,
-    };
-
-    setActivities((current) => [newActivity, ...current]);
-  };
-
-  const handleCheckout = () => {
-    if (products.length === 0) return;
-
-    setCheckoutDone(true);
-
-    addActivity(
-      `Checkout completed • ${formatCurrency(total)}`,
-      "payment"
-    );
-  };
-
-  const generateTransactionId = () => {
-    return `SC-${Date.now().toString().slice(-8)}`;
+  const handleNewBill = () => {
+    clearCart();
   };
 
   return (
-    <div className="app">
-      {/* Sidebar */}
-      <aside className="sidebar">
-        <div className="brand">
-          <div className="brand-icon">🛒</div>
+    <div className="min-h-screen bg-slate-100/70 text-slate-800 antialiased flex flex-col font-sans">
+      {/* POS Top Bar */}
+      <Header
+        cartId={DEFAULT_CART_ID}
+        itemCount={totals.itemCount}
+        onOpenAddModal={() => setIsAddModalOpen(true)}
+        onResetCart={resetToDefault}
+      />
 
-          <div>
-            <h1>SmartCart</h1>
-            <span>Smart Shopping</span>
-          </div>
-        </div>
+      {/* Main Billing Canvas */}
+      <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
+        {/* Section 1: Current Products & Quantity Controls */}
+        <ProductTable
+          items={items}
+          onUpdateQuantity={updateQuantity}
+          onRemove={removeItem}
+          onOpenAddModal={() => setIsAddModalOpen(true)}
+          onLoadSample={resetToDefault}
+        />
 
-        <nav className="navigation">
-          <button className="nav-item active">
-            <span>▦</span>
-            Dashboard
-          </button>
-
-          <button className="nav-item">
-            <span>🛒</span>
-            My Cart
-          </button>
-
-          <button className="nav-item">
-            <span>📡</span>
-            RFID Scanner
-          </button>
-
-          <button className="nav-item">
-            <span>🧾</span>
-            Transactions
-          </button>
-
-          <button className="nav-item">
-            <span>⚙</span>
-            Settings
-          </button>
-        </nav>
-
-        <div className="sidebar-bottom">
-          <div className="cart-mini-status">
-            <div className="status-dot"></div>
-
-            <div>
-              <strong>Cart Connected</strong>
-              <span>SmartCart #SC-001</span>
-            </div>
-          </div>
-        </div>
-      </aside>
-
-      {/* Main Content */}
-      <main className="main">
-        {/* Header */}
-        <header className="header">
-          <div>
-            <p className="eyebrow">SMART SHOPPING SYSTEM</p>
-            <h2>Shopping Dashboard</h2>
-            <p className="header-description">
-              Manage your cart and track your shopping session in real time.
-            </p>
-          </div>
-
-          <div className="header-actions">
-            <div className="connection-status">
-              <span className="online-dot"></span>
-              Backend Online
-            </div>
-
-            <div className="profile">
-              <div className="profile-avatar">U</div>
-              <div>
-                <strong>Shopper</strong>
-                <span>Session Active</span>
-              </div>
-            </div>
-          </div>
-        </header>
-
-        {/* System Status */}
-        <section className="status-grid">
-          <div className="status-card">
-            <div className="status-card-icon blue">📡</div>
-
-            <div>
-              <span>RFID Reader</span>
-              <strong>
-                {rfidConnected ? "Connected" : "Disconnected"}
-              </strong>
-
-              <small>MFRC522 • 13.56 MHz</small>
-            </div>
-
-            <div className="status-indicator green"></div>
-          </div>
-
-          <div className="status-card">
-            <div className="status-card-icon purple">🛒</div>
-
-            <div>
-              <span>Cart Status</span>
-              <strong>
-                {cartFollowing ? "Following" : "Stationary"}
-              </strong>
-
-              <small>Cart #SC-001</small>
-            </div>
-
-            <div className="status-indicator green"></div>
-          </div>
-
-          <div className="status-card">
-            <div className="status-card-icon orange">⏱</div>
-
-            <div>
-              <span>Session Time</span>
-              <strong>00:24:36</strong>
-              <small>Started 10:18 PM</small>
-            </div>
-          </div>
-
-          <div className="status-card">
-            <div className="status-card-icon green">✓</div>
-
-            <div>
-              <span>System</span>
-              <strong>Operational</strong>
-              <small>All services running</small>
-            </div>
-
-            <div className="status-indicator green"></div>
-          </div>
-        </section>
-
-        {/* Dashboard Grid */}
-        <section className="dashboard-grid">
-          {/* Cart */}
-          <div className="card cart-card">
-            <div className="card-header">
-              <div>
-                <h3>Current Cart</h3>
-                <span>
-                  {totalItems} {totalItems === 1 ? "item" : "items"} detected
-                </span>
-              </div>
-
-              <button
-                className={`follow-button ${cartFollowing ? "following" : ""
-                  }`}
-                onClick={() => setCartFollowing(!cartFollowing)}
-              >
-                🤖 {cartFollowing ? "Following" : "Enable Follow"}
-              </button>
-            </div>
-
-            <div className="cart-list">
-              {products.length === 0 ? (
-                <div className="empty-cart">
-                  <div>🛒</div>
-                  <h3>Your cart is empty</h3>
-                  <p>
-                    Scan an RFID-tagged product to add it to your cart.
-                  </p>
-                </div>
-              ) : (
-                products.map((product) => (
-                  <div className="product-row" key={product.id}>
-                    <div className="product-image">
-                      {product.category === "Dairy"
-                        ? "🥛"
-                        : product.category === "Bakery"
-                          ? "🍞"
-                          : "🍗"}
-                    </div>
-
-                    <div className="product-info">
-                      <strong>{product.name}</strong>
-
-                      <span>
-                        {product.category} • {product.tagId}
-                      </span>
-                    </div>
-
-                    <div className="quantity-control">
-                      <button
-                        onClick={() =>
-                          updateQuantity(product.id, -1)
-                        }
-                      >
-                        −
-                      </button>
-
-                      <span>{product.quantity}</span>
-
-                      <button
-                        onClick={() =>
-                          updateQuantity(product.id, 1)
-                        }
-                      >
-                        +
-                      </button>
-                    </div>
-
-                    <div className="product-price">
-                      {formatCurrency(
-                        product.price * product.quantity
-                      )}
-                    </div>
-
-                    <button
-                      className="delete-button"
-                      onClick={() => removeProduct(product.id)}
-                    >
-                      ×
-                    </button>
-                  </div>
-                ))
-              )}
-            </div>
-
-            <div className="scan-banner">
-              <div className="scan-icon">📡</div>
-
-              <div>
-                <strong>RFID Scanner Ready</strong>
-                <span>
-                  Place a tagged product inside the cart to scan.
-                </span>
-              </div>
-
-              <div className="pulse"></div>
-            </div>
-          </div>
-
-          {/* Billing */}
-          <div className="card billing-card">
-            <div className="card-header">
-              <div>
-                <h3>Live Billing</h3>
-                <span>Real-time calculation</span>
-              </div>
-
-              <span className="live-badge">
-                <span></span>
-                LIVE
-              </span>
-            </div>
-
-            <div className="bill-summary">
-              <div>
-                <span>Items</span>
-                <strong>{totalItems}</strong>
-              </div>
-
-              <div>
-                <span>Subtotal</span>
-                <strong>{formatCurrency(subtotal)}</strong>
-              </div>
-
-              <div>
-                <span>GST (5%)</span>
-                <strong>{formatCurrency(tax)}</strong>
-              </div>
-            </div>
-
-            <div className="total-section">
-              <span>Total Amount</span>
-              <strong>{formatCurrency(total)}</strong>
-            </div>
-
-            <button
-              className="checkout-button"
-              onClick={handleCheckout}
-              disabled={products.length === 0 || checkoutDone}
-            >
-              {checkoutDone
-                ? "✓ Checkout Complete"
-                : "Proceed to Checkout →"}
-            </button>
-
-            {checkoutDone && (
-              <div className="transaction-success">
-                <span>✓</span>
-
-                <div>
-                  <strong>Payment Successful</strong>
-
-                  <small>
-                    Transaction ID: {generateTransactionId()}
-                  </small>
-                </div>
-              </div>
-            )}
-
-            <p className="secure-text">
-              🔒 Secure transaction • Digital receipt generated
-            </p>
-          </div>
-        </section>
-
-        {/* Bottom Section */}
-        <section className="bottom-grid">
-          {/* Activity */}
-          <div className="card activity-card">
-            <div className="card-header">
-              <div>
-                <h3>Live Activity</h3>
-                <span>Recent cart events</span>
-              </div>
-
-              <button
-                className="clear-button"
-                onClick={() => setActivities([])}
-              >
-                Clear
-              </button>
-            </div>
-
-            <div className="activity-list">
-              {activities.length === 0 ? (
-                <div className="no-activity">
-                  No recent activity.
-                </div>
-              ) : (
-                activities.slice(0, 5).map((activity) => (
-                  <div className="activity-item" key={activity.id}>
-                    <div
-                      className={`activity-icon ${activity.type}`}
-                    >
-                      {activity.type === "rfid"
-                        ? "📡"
-                        : activity.type === "payment"
-                          ? "₹"
-                          : activity.type === "cart"
-                            ? "🛒"
-                            : "✓"}
-                    </div>
-
-                    <div className="activity-info">
-                      <strong>{activity.message}</strong>
-                      <span>{activity.time}</span>
-                    </div>
-                  </div>
-                ))
-              )}
-            </div>
-          </div>
-
-          {/* Session */}
-          <div className="card session-card">
-            <div className="card-header">
-              <div>
-                <h3>Shopping Session</h3>
-                <span>Current session information</span>
-              </div>
-            </div>
-
-            <div className="session-details">
-              <div className="detail">
-                <span>Session ID</span>
-                <strong>SES-2026-0902-001</strong>
-              </div>
-
-              <div className="detail">
-                <span>Cart ID</span>
-                <strong>SC-001</strong>
-              </div>
-
-              <div className="detail">
-                <span>Last RFID Scan</span>
-                <strong>RFID-C71D42</strong>
-              </div>
-
-              <div className="detail">
-                <span>Products Scanned</span>
-                <strong>{totalItems}</strong>
-              </div>
-            </div>
-
-            <div className="future-robotics">
-              <div className="robot-icon">🤖</div>
-
-              <div>
-                <strong>ROS 2 Integration</strong>
-
-                <span>
-                  Autonomous navigation module ready for future
-                  integration.
-                </span>
-              </div>
-
-              <span className="future-label">FUTURE</span>
-            </div>
-          </div>
-        </section>
-
-        <footer>
-          <span>SmartCart © 2026</span>
-
-          <span>
-            ESP32 • FastAPI • React • SQLite • ROS 2
-          </span>
-        </footer>
+        {/* Section 2: Below Section - Net Bill, Total Items & Checkout Button */}
+        <BillingSummary
+          totals={totals}
+          onCheckout={handleStartCheckout}
+          disabled={items.length === 0}
+        />
       </main>
+
+      {/* Footer */}
+      <footer className="py-6 border-t border-slate-200/70 text-center text-xs text-slate-400">
+        <div className="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <span>SmartCart POS Terminal • Autonomous RFID Checkout</span>
+          <span className="font-mono text-[11px] text-slate-400">
+            v2.1 • UPI Simulation Mode (Razorpay Ready)
+          </span>
+        </div>
+      </footer>
+
+      {/* Dialogs */}
+      <AddProductDialog
+        isOpen={isAddModalOpen}
+        onClose={() => setIsAddModalOpen(false)}
+        onAddProduct={handleAddProduct}
+      />
+
+      <CheckoutModal
+        isOpen={isCheckoutModalOpen}
+        onClose={() => setIsCheckoutModalOpen(false)}
+        totals={totals}
+        items={items}
+        cartId={DEFAULT_CART_ID}
+        onNewBill={handleNewBill}
+      />
     </div>
   );
 }
