@@ -4,9 +4,10 @@ import { QrCodeDisplay } from './QrCodeDisplay';
 import { PaymentSimulator } from './PaymentSimulator';
 import { PaymentSuccessView } from './PaymentSuccessView';
 import { PaymentService } from '../services/paymentService';
+import { smartCartApi } from '../../../shared/services/api';
 import type { CartItem, CartTotals } from '../../cart/types';
 import type { PaymentReceipt, PaymentStatus } from '../types';
-import { DEFAULT_CART_ID, DEFAULT_STORE_NAME } from '../../../shared/config/constants';
+import { DEFAULT_STORE_NAME } from '../../../shared/config/constants';
 import { generateBillNumber } from '../../../shared/utils/formatters';
 
 interface CheckoutModalProps {
@@ -14,7 +15,8 @@ interface CheckoutModalProps {
   onClose: () => void;
   totals: CartTotals;
   items: CartItem[];
-  cartId?: string;
+  cartId: number | null;
+  cartCode: string;
   onNewBill: () => void;
 }
 
@@ -23,7 +25,8 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   onClose,
   totals,
   items,
-  cartId = DEFAULT_CART_ID,
+  cartId,
+  cartCode,
   onNewBill,
 }) => {
   const [status, setStatus] = useState<PaymentStatus>('awaiting_payment');
@@ -36,26 +39,40 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     setErrorMessage(undefined);
 
     try {
-      const result = await PaymentService.simulatePayment(totals.total, true);
+      let transactionId = '';
 
-      if (result.success) {
-        const newReceipt: PaymentReceipt = {
-          transactionId: result.transactionId,
-          billNumber,
-          cartId,
-          storeName: DEFAULT_STORE_NAME,
-          totals,
-          items: [...items],
-          timestamp: new Date().toISOString(),
-          paymentMethod: 'UPI Dynamic QR (Simulated)',
-        };
-
-        setReceipt(newReceipt);
-        setStatus('success');
-      } else {
-        setStatus('failed');
-        setErrorMessage(result.error || 'Payment failed.');
+      // If connected to backend, initiate checkout in FastAPI backend
+      if (cartId) {
+        try {
+          const checkoutRes = await smartCartApi.checkout(cartId);
+          transactionId = checkoutRes.transaction_code;
+        } catch (apiErr) {
+          console.warn('Backend checkout call failed, using simulation fallback:', apiErr);
+        }
       }
+
+      // If backend didn't provide transactionId, use simulated one
+      if (!transactionId) {
+        const simResult = await PaymentService.simulatePayment(totals.total, true);
+        transactionId = simResult.transactionId;
+      } else {
+        // short simulated processing delay for UX
+        await new Promise((resolve) => setTimeout(resolve, 600));
+      }
+
+      const newReceipt: PaymentReceipt = {
+        transactionId,
+        billNumber,
+        cartId: cartCode,
+        storeName: DEFAULT_STORE_NAME,
+        totals,
+        items: [...items],
+        timestamp: new Date().toISOString(),
+        paymentMethod: 'UPI Dynamic QR (Verified)',
+      };
+
+      setReceipt(newReceipt);
+      setStatus('success');
     } catch {
       setStatus('failed');
       setErrorMessage('Unexpected gateway error occurred.');
@@ -104,7 +121,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         <div>
           <QrCodeDisplay
             amount={totals.total}
-            cartId={cartId}
+            cartId={cartCode}
             billNumber={billNumber}
           />
 

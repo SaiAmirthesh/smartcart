@@ -30,9 +30,6 @@ export const BillingSummary: React.FC<BillingSummaryProps> = ({
             <p className="text-xs text-slate-500">Real-time invoice calculations & tax breakdown</p>
           </div>
         </div>
-        <div className="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full border border-slate-200/60">
-          GST Included (5%)
-        </div>
       </div>
 
       {/* Bill Breakdown Cards */}

@@ -1,19 +1,23 @@
 import React from 'react';
-import { ShoppingBag, RotateCcw, Plus } from 'lucide-react';
+import { ShoppingBag, RotateCcw, Plus, RefreshCw, Wifi, WifiOff } from 'lucide-react';
 import { Button } from './Button';
 import { Badge } from './Badge';
-import { DEFAULT_CART_ID, DEFAULT_STORE_NAME } from '../config/constants';
+import { DEFAULT_STORE_NAME } from '../config/constants';
 
 interface HeaderProps {
-  cartId?: string;
+  cartCode: string;
   itemCount: number;
+  isBackendConnected: boolean;
+  isSyncing?: boolean;
   onOpenAddModal: () => void;
   onResetCart: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  cartId = DEFAULT_CART_ID,
+  cartCode,
   itemCount,
+  isBackendConnected,
+  isSyncing = false,
   onOpenAddModal,
   onResetCart,
 }) => {
@@ -27,18 +31,28 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-base font-bold text-slate-900 tracking-tight">SmartCart POS</h1>
-              <Badge variant="purple" className="font-mono text-[10px] px-2 py-0">
-                {cartId}
-              </Badge>
+              <h1 className="text-base font-bold text-slate-900 tracking-tight">SmartCart</h1>
+              {isSyncing && (
+                <span className="flex items-center gap-1 text-[10px] text-indigo-600 font-mono animate-pulse">
+                  <RefreshCw className="w-2.5 h-2.5 animate-spin" />
+                  Syncing...
+                </span>
+              )}
             </div>
             <p className="text-xs text-slate-500 flex items-center gap-1.5 font-medium">
               <span>{DEFAULT_STORE_NAME}</span>
               <span>•</span>
-              <span className="flex items-center gap-1 text-emerald-600">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                Live RFID Engine
-              </span>
+              {isBackendConnected ? (
+                <span className="flex items-center gap-1 text-emerald-600">
+                  <Wifi className="w-3 h-3 text-emerald-500" />
+                  Connected
+                </span>
+              ) : (
+                <span className="flex items-center gap-1 text-amber-600">
+                  <WifiOff className="w-3 h-3 text-amber-500" />
+                  Connecting to Backend...
+                </span>
+              )}
             </p>
           </div>
         </div>
@@ -62,9 +76,9 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={onResetCart}
               icon={<RotateCcw className="w-3.5 h-3.5 text-slate-400" />}
               className="text-slate-500 hover:text-slate-800"
-              title="Reset current cart"
+              title="Reset current cart and start new session"
             >
-              <span className="hidden sm:inline">Clear</span>
+              <span className="hidden sm:inline">New Cart</span>
             </Button>
           )}
         </div>
