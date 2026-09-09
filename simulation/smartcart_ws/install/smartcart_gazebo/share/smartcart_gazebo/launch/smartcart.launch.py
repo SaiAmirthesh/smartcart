@@ -1,29 +1,39 @@
-from launch.substitutions import Command
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import PathJoinSubstitution
+from launch.substitutions import PathJoinSubstitution, Command
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
 
-    # Gazebo world
+    # =========================
+    # GAZEBO WORLD
+    # =========================
+
     world = PathJoinSubstitution([
         FindPackageShare('smartcart_gazebo'),
         'worlds',
         'smartcart_world.sdf'
     ])
 
-    # SmartCart Xacro
+
+    # =========================
+    # SMARTCART XACRO
+    # =========================
+
     robot_description_file = PathJoinSubstitution([
         FindPackageShare('smartcart_description'),
         'urdf',
         'smartcart.urdf.xacro'
     ])
 
-    # Start Gazebo
+
+    # =========================
+    # START GAZEBO
+    # =========================
+
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([
@@ -37,22 +47,30 @@ def generate_launch_description():
         }.items()
     )
 
-    # Publish robot_description and TF
+
+    # =========================
+    # ROBOT STATE PUBLISHER
+    # =========================
+
     robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-       	parameters=[
-    		{
-        	'robot_description': Command([
-            	'xacro ',
-            	robot_description_file
-        	])
-    		}
-	]
+        parameters=[
+            {
+                'robot_description': Command([
+                    'xacro ',
+                    robot_description_file
+                ])
+            }
+        ]
     )
 
-    # Spawn robot in Gazebo
+
+    # =========================
+    # SPAWN SMARTCART
+    # =========================
+
     spawn_robot = Node(
         package='ros_gz_sim',
         executable='create',
@@ -64,8 +82,28 @@ def generate_launch_description():
         output='screen'
     )
 
+
+    # =========================
+    # LIDAR BRIDGE
+    # =========================
+
+    lidar_bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        arguments=[
+            '/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan'
+        ],
+        output='screen'
+    )
+
+
+    # =========================
+    # LAUNCH EVERYTHING
+    # =========================
+
     return LaunchDescription([
         gazebo,
         robot_state_publisher,
-        spawn_robot
+        spawn_robot,
+        lidar_bridge
     ])
