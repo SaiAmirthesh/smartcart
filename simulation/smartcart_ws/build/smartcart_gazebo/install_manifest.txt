@@ -1,5 +1,7 @@
 /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/launch/smartcart.launch.py
 /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/worlds/smartcart_world.sdf
+/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/models/human/model.config
+/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/models/human/model.sdf
 /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/ament_index/resource_index/package_run_dependencies/smartcart_gazebo
 /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/ament_index/resource_index/parent_prefix_path/smartcart_gazebo
 /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/environment/ament_prefix_path.sh
