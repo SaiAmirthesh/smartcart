@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: smartcart-human
+Version: 0.0.0
+Summary: Human controller for SmartCart simulation
+Maintainer: hari-aswath
+Maintainer-email: hariaswath07@gmail.com
+License: Apache-2.0
+Provides-Extra: test

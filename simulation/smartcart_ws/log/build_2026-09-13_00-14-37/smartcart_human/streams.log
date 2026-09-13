@@ -1,0 +1,19 @@
+[54.604s] Invoking command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_human': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/smartcart_human build --build-base /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build install --record /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/install.log --install-scripts $base/lib/smartcart_human --single-version-externally-managed install_data
+[55.769s] running egg_info
+[55.865s] writing ../../build/smartcart_human/smartcart_human.egg-info/PKG-INFO
+[55.882s] writing dependency_links to ../../build/smartcart_human/smartcart_human.egg-info/dependency_links.txt
+[55.884s] writing requirements to ../../build/smartcart_human/smartcart_human.egg-info/requires.txt
+[55.884s] writing top-level names to ../../build/smartcart_human/smartcart_human.egg-info/top_level.txt
+[56.078s] reading manifest file '../../build/smartcart_human/smartcart_human.egg-info/SOURCES.txt'
+[56.097s] writing manifest file '../../build/smartcart_human/smartcart_human.egg-info/SOURCES.txt'
+[56.097s] running build
+[56.098s] running build_py
+[56.127s] running install
+[56.147s] running install_lib
+[56.260s] running install_data
+[56.280s] running install_egg_info
+[56.386s] removing '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages/smartcart_human-0.0.0-py3.12.egg-info' (and everything under it)
+[56.387s] Copying ../../build/smartcart_human/smartcart_human.egg-info to /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages/smartcart_human-0.0.0-py3.12.egg-info
+[56.406s] running install_scripts
+[56.975s] writing list of installed files to '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/install.log'
+[57.076s] Invoked command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_human' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/smartcart_human build --build-base /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build install --record /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/install.log --install-scripts $base/lib/smartcart_human --single-version-externally-managed install_data

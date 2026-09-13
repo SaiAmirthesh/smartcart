@@ -1,0 +1,29 @@
+[0.394s] Invoking command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo -- -j4 -l4
+[2.724s] Invoked command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo -- -j4 -l4
+[2.913s] Invoking command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo
+[3.000s] -- Install configuration: ""
+[3.007s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/launch
+[3.013s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/launch/smartcart.launch.py
+[3.013s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/worlds
+[3.014s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/worlds/smartcart_world.sdf
+[3.014s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/models
+[3.019s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/models/human
+[3.041s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/models/human/model.config
+[3.041s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/models/human/model.sdf
+[3.042s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/config
+[3.063s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/ament_index/resource_index/package_run_dependencies/smartcart_gazebo
+[3.077s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/ament_index/resource_index/parent_prefix_path/smartcart_gazebo
+[3.081s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/environment/ament_prefix_path.sh
+[3.082s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/environment/ament_prefix_path.dsv
+[3.082s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/environment/path.sh
+[3.093s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/environment/path.dsv
+[3.094s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/local_setup.bash
+[3.094s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/local_setup.sh
+[3.110s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/local_setup.zsh
+[3.110s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/local_setup.dsv
+[3.111s] -- Installing: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.dsv
+[3.128s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/ament_index/resource_index/packages/smartcart_gazebo
+[3.137s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/cmake/smartcart_gazeboConfig.cmake
+[3.137s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/cmake/smartcart_gazeboConfig-version.cmake
+[3.142s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.xml
+[3.441s] Invoked command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo

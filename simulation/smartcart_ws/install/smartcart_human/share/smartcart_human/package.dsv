@@ -1,0 +1,6 @@
+source;share/smartcart_human/hook/pythonpath.ps1
+source;share/smartcart_human/hook/pythonpath.dsv
+source;share/smartcart_human/hook/pythonpath.sh
+source;share/smartcart_human/hook/ament_prefix_path.ps1
+source;share/smartcart_human/hook/ament_prefix_path.dsv
+source;share/smartcart_human/hook/ament_prefix_path.sh

@@ -1,0 +1,35 @@
+[8.895s] Invoking command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_human': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/smartcart_human build --build-base /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build install --record /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/install.log --install-scripts $base/lib/smartcart_human --single-version-externally-managed install_data
+[9.724s] running egg_info
+[9.725s] creating ../../build/smartcart_human/smartcart_human.egg-info
+[9.790s] writing ../../build/smartcart_human/smartcart_human.egg-info/PKG-INFO
+[9.792s] writing dependency_links to ../../build/smartcart_human/smartcart_human.egg-info/dependency_links.txt
+[9.793s] writing requirements to ../../build/smartcart_human/smartcart_human.egg-info/requires.txt
+[9.793s] writing top-level names to ../../build/smartcart_human/smartcart_human.egg-info/top_level.txt
+[9.794s] writing manifest file '../../build/smartcart_human/smartcart_human.egg-info/SOURCES.txt'
+[9.922s] reading manifest file '../../build/smartcart_human/smartcart_human.egg-info/SOURCES.txt'
+[9.923s] writing manifest file '../../build/smartcart_human/smartcart_human.egg-info/SOURCES.txt'
+[9.924s] running build
+[9.924s] running build_py
+[9.925s] creating /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build
+[9.925s] creating /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build/lib
+[9.925s] creating /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build/lib/smartcart_human
+[9.926s] copying smartcart_human/__init__.py -> /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build/lib/smartcart_human
+[9.926s] copying smartcart_human/human_controller.py -> /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build/lib/smartcart_human
+[9.926s] running install
+[9.939s] running install_lib
+[10.006s] creating /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages/smartcart_human
+[10.006s] copying /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build/lib/smartcart_human/__init__.py -> /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages/smartcart_human
+[10.007s] copying /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build/lib/smartcart_human/human_controller.py -> /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages/smartcart_human
+[10.007s] byte-compiling /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages/smartcart_human/__init__.py to __init__.cpython-312.pyc
+[10.008s] byte-compiling /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages/smartcart_human/human_controller.py to human_controller.cpython-312.pyc
+[10.009s] running install_data
+[10.010s] creating /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/share/ament_index
+[10.010s] creating /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/share/ament_index/resource_index
+[10.011s] creating /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/share/ament_index/resource_index/packages
+[10.011s] copying resource/smartcart_human -> /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/share/ament_index/resource_index/packages
+[10.011s] copying package.xml -> /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/share/smartcart_human
+[10.011s] running install_egg_info
+[10.076s] Copying ../../build/smartcart_human/smartcart_human.egg-info to /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages/smartcart_human-0.0.0-py3.12.egg-info
+[10.078s] running install_scripts
+[10.465s] writing list of installed files to '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/install.log'
+[10.529s] Invoked command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_human' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/smartcart_human build --build-base /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build install --record /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/install.log --install-scripts $base/lib/smartcart_human --single-version-externally-managed install_data

@@ -1,0 +1,656 @@
+[0.000000] (-) TimerEvent: {}
+[0.001795] (smartcart_description) JobQueued: {'identifier': 'smartcart_description', 'dependencies': OrderedDict()}
+[0.001946] (smartcart_gazebo) JobQueued: {'identifier': 'smartcart_gazebo', 'dependencies': OrderedDict()}
+[0.002712] (smartcart_human) JobQueued: {'identifier': 'smartcart_human', 'dependencies': OrderedDict()}
+[0.002850] (smartcart_description) JobStarted: {'identifier': 'smartcart_description'}
+[0.099838] (-) TimerEvent: {}
+[0.200296] (-) TimerEvent: {}
+[0.300766] (-) TimerEvent: {}
+[0.349272] (smartcart_gazebo) JobStarted: {'identifier': 'smartcart_gazebo'}
+[0.360309] (smartcart_human) JobStarted: {'identifier': 'smartcart_human'}
+[0.400873] (-) TimerEvent: {}
+[0.501275] (-) TimerEvent: {}
+[0.529687] (smartcart_description) JobProgress: {'identifier': 'smartcart_description', 'progress': 'cmake'}
+[0.582694] (smartcart_description) JobProgress: {'identifier': 'smartcart_description', 'progress': 'build'}
+[0.584439] (smartcart_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description', '--', '-j4', '-l4'], 'cwd': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'XSCHEM_LIBRARY_PATH': '/home/hari-aswath/skywater-pdk/libraries/sky130_fd_pr/latest/xschem', 'USER': 'hari-aswath', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hari-aswath', 'OLDPWD': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2241', 'PDK_ROOT': '/home/hari-aswath/skywater-pdk', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hari-aswath', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hari-aswath', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/hari-aswath/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hari-aswath/.local/bin:/home/hari-aswath/.local/bin:/home/hari-aswath/.local/bin', 'SESSION_MANAGER': 'local/hari-aswath-X555LA:@/tmp/.ICE-unix/2208,unix/hari-aswath-X555LA:/tmp/.ICE-unix/2208', 'PDK': 'sky130A', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/bfa8dc72_465c_477b_9892_d51b96956934', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.419TV3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.120', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:407770d3-04db-4d2c-a117-b3da966d7ec8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy'}), 'shell': False}
+[0.601393] (-) TimerEvent: {}
+[1.192407] (-) TimerEvent: {}
+[1.293421] (smartcart_gazebo) JobProgress: {'identifier': 'smartcart_gazebo', 'progress': 'cmake'}
+[1.293545] (-) TimerEvent: {}
+[1.393961] (-) TimerEvent: {}
+[1.494780] (-) TimerEvent: {}
+[1.595283] (-) TimerEvent: {}
+[1.695715] (-) TimerEvent: {}
+[1.796090] (-) TimerEvent: {}
+[1.896473] (-) TimerEvent: {}
+[1.930622] (smartcart_gazebo) JobProgress: {'identifier': 'smartcart_gazebo', 'progress': 'build'}
+[1.931154] (smartcart_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo', '--', '-j4', '-l4'], 'cwd': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'XSCHEM_LIBRARY_PATH': '/home/hari-aswath/skywater-pdk/libraries/sky130_fd_pr/latest/xschem', 'USER': 'hari-aswath', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hari-aswath', 'OLDPWD': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2241', 'PDK_ROOT': '/home/hari-aswath/skywater-pdk', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hari-aswath', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hari-aswath', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/hari-aswath/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hari-aswath/.local/bin:/home/hari-aswath/.local/bin:/home/hari-aswath/.local/bin', 'SESSION_MANAGER': 'local/hari-aswath-X555LA:@/tmp/.ICE-unix/2208,unix/hari-aswath-X555LA:/tmp/.ICE-unix/2208', 'PDK': 'sky130A', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/bfa8dc72_465c_477b_9892_d51b96956934', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.419TV3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.120', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:407770d3-04db-4d2c-a117-b3da966d7ec8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy'}), 'shell': False}
+[1.996591] (-) TimerEvent: {}
+[2.097011] (-) TimerEvent: {}
+[2.197504] (-) TimerEvent: {}
+[2.297964] (-) TimerEvent: {}
+[2.399314] (-) TimerEvent: {}
+[2.499772] (-) TimerEvent: {}
+[2.600255] (-) TimerEvent: {}
+[2.700710] (-) TimerEvent: {}
+[2.801117] (-) TimerEvent: {}
+[2.901667] (-) TimerEvent: {}
+[3.005343] (-) TimerEvent: {}
+[3.105889] (-) TimerEvent: {}
+[3.206338] (-) TimerEvent: {}
+[3.306723] (-) TimerEvent: {}
+[3.407263] (-) TimerEvent: {}
+[3.507828] (-) TimerEvent: {}
+[3.608327] (-) TimerEvent: {}
+[3.708811] (-) TimerEvent: {}
+[3.809416] (-) TimerEvent: {}
+[3.910052] (-) TimerEvent: {}
+[4.010504] (-) TimerEvent: {}
+[4.110942] (-) TimerEvent: {}
+[4.212330] (-) TimerEvent: {}
+[4.312811] (-) TimerEvent: {}
+[4.413582] (-) TimerEvent: {}
+[4.514280] (-) TimerEvent: {}
+[4.615498] (-) TimerEvent: {}
+[4.715935] (-) TimerEvent: {}
+[4.817205] (-) TimerEvent: {}
+[4.917671] (-) TimerEvent: {}
+[5.018139] (-) TimerEvent: {}
+[5.118728] (-) TimerEvent: {}
+[5.219193] (-) TimerEvent: {}
+[5.319610] (-) TimerEvent: {}
+[5.420005] (-) TimerEvent: {}
+[5.520431] (-) TimerEvent: {}
+[5.620904] (-) TimerEvent: {}
+[5.721324] (-) TimerEvent: {}
+[5.821791] (-) TimerEvent: {}
+[5.922260] (-) TimerEvent: {}
+[6.022708] (-) TimerEvent: {}
+[6.123164] (-) TimerEvent: {}
+[6.223632] (-) TimerEvent: {}
+[6.324095] (-) TimerEvent: {}
+[6.424518] (-) TimerEvent: {}
+[6.524956] (-) TimerEvent: {}
+[6.625530] (-) TimerEvent: {}
+[6.726017] (-) TimerEvent: {}
+[6.826467] (-) TimerEvent: {}
+[6.926922] (-) TimerEvent: {}
+[7.027475] (-) TimerEvent: {}
+[7.127963] (-) TimerEvent: {}
+[7.228421] (-) TimerEvent: {}
+[7.328920] (-) TimerEvent: {}
+[7.429434] (-) TimerEvent: {}
+[7.530095] (-) TimerEvent: {}
+[7.630526] (-) TimerEvent: {}
+[7.730926] (-) TimerEvent: {}
+[7.822418] (smartcart_description) CommandEnded: {'returncode': 0}
+[7.831093] (-) TimerEvent: {}
+[7.931517] (-) TimerEvent: {}
+[8.014819] (smartcart_description) JobProgress: {'identifier': 'smartcart_description', 'progress': 'install'}
+[8.031671] (-) TimerEvent: {}
+[8.041020] (smartcart_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description'], 'cwd': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'XSCHEM_LIBRARY_PATH': '/home/hari-aswath/skywater-pdk/libraries/sky130_fd_pr/latest/xschem', 'USER': 'hari-aswath', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hari-aswath', 'OLDPWD': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2241', 'PDK_ROOT': '/home/hari-aswath/skywater-pdk', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hari-aswath', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hari-aswath', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/hari-aswath/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hari-aswath/.local/bin:/home/hari-aswath/.local/bin:/home/hari-aswath/.local/bin', 'SESSION_MANAGER': 'local/hari-aswath-X555LA:@/tmp/.ICE-unix/2208,unix/hari-aswath-X555LA:/tmp/.ICE-unix/2208', 'PDK': 'sky130A', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/bfa8dc72_465c_477b_9892_d51b96956934', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.419TV3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.120', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:407770d3-04db-4d2c-a117-b3da966d7ec8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy'}), 'shell': False}
+[8.044878] (smartcart_gazebo) CommandEnded: {'returncode': 0}
+[8.083550] (smartcart_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.084366] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/urdf\n'}
+[8.104930] (smartcart_gazebo) JobProgress: {'identifier': 'smartcart_gazebo', 'progress': 'install'}
+[8.105079] (smartcart_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo'], 'cwd': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'XSCHEM_LIBRARY_PATH': '/home/hari-aswath/skywater-pdk/libraries/sky130_fd_pr/latest/xschem', 'USER': 'hari-aswath', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hari-aswath', 'OLDPWD': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2241', 'PDK_ROOT': '/home/hari-aswath/skywater-pdk', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hari-aswath', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hari-aswath', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/hari-aswath/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hari-aswath/.local/bin:/home/hari-aswath/.local/bin:/home/hari-aswath/.local/bin', 'SESSION_MANAGER': 'local/hari-aswath-X555LA:@/tmp/.ICE-unix/2208,unix/hari-aswath-X555LA:/tmp/.ICE-unix/2208', 'PDK': 'sky130A', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/bfa8dc72_465c_477b_9892_d51b96956934', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.419TV3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.120', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:407770d3-04db-4d2c-a117-b3da966d7ec8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_gazebo', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy'}), 'shell': False}
+[8.123573] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/urdf/smartcart.urdf.xacro\n'}
+[8.124052] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/launch\n'}
+[8.131790] (-) TimerEvent: {}
+[8.146916] (smartcart_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.147606] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/launch\n'}
+[8.154061] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/meshes\n'}
+[8.154655] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/config\n'}
+[8.154984] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/ament_index/resource_index/package_run_dependencies/smartcart_description\n'}
+[8.179655] (smartcart_gazebo) StdoutLine: {'line': b'-- Installing: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/launch/smartcart.launch.py\n'}
+[8.201374] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/ament_index/resource_index/parent_prefix_path/smartcart_description\n'}
+[8.203618] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/environment/ament_prefix_path.sh\n'}
+[8.204224] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/environment/ament_prefix_path.dsv\n'}
+[8.205405] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/environment/path.sh\n'}
+[8.205893] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/environment/path.dsv\n'}
+[8.206214] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/local_setup.bash\n'}
+[8.206542] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/local_setup.sh\n'}
+[8.206888] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/local_setup.zsh\n'}
+[8.207162] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/local_setup.dsv\n'}
+[8.207479] (smartcart_description) StdoutLine: {'line': b'-- Installing: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.dsv\n'}
+[8.231898] (-) TimerEvent: {}
+[8.238659] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/ament_index/resource_index/packages/smartcart_description\n'}
+[8.239432] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/cmake/smartcart_descriptionConfig.cmake\n'}
+[8.239671] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/cmake/smartcart_descriptionConfig-version.cmake\n'}
+[8.240031] (smartcart_description) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.xml\n'}
+[8.244579] (smartcart_description) CommandEnded: {'returncode': 0}
+[8.330513] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/worlds\n'}
+[8.330977] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/worlds/smartcart_world.sdf\n'}
+[8.331334] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/models\n'}
+[8.331973] (-) TimerEvent: {}
+[8.356754] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/models/human\n'}
+[8.414725] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/models/human/model.config\n'}
+[8.415353] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/models/human/model.sdf\n'}
+[8.415591] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/config\n'}
+[8.432105] (-) TimerEvent: {}
+[8.437643] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/ament_index/resource_index/package_run_dependencies/smartcart_gazebo\n'}
+[8.456263] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/ament_index/resource_index/parent_prefix_path/smartcart_gazebo\n'}
+[8.457366] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/environment/ament_prefix_path.sh\n'}
+[8.457708] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/environment/ament_prefix_path.dsv\n'}
+[8.458040] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/environment/path.sh\n'}
+[8.458956] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/environment/path.dsv\n'}
+[8.459378] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/local_setup.bash\n'}
+[8.459896] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/local_setup.sh\n'}
+[8.460324] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/local_setup.zsh\n'}
+[8.460658] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/local_setup.dsv\n'}
+[8.461005] (smartcart_gazebo) StdoutLine: {'line': b'-- Installing: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.dsv\n'}
+[8.461400] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/ament_index/resource_index/packages/smartcart_gazebo\n'}
+[8.461723] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/cmake/smartcart_gazeboConfig.cmake\n'}
+[8.462036] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/cmake/smartcart_gazeboConfig-version.cmake\n'}
+[8.462385] (smartcart_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo/share/smartcart_gazebo/package.xml\n'}
+[8.532261] (-) TimerEvent: {}
+[8.632660] (-) TimerEvent: {}
+[8.733105] (-) TimerEvent: {}
+[8.833590] (-) TimerEvent: {}
+[8.934184] (-) TimerEvent: {}
+[9.034576] (-) TimerEvent: {}
+[9.114288] (smartcart_description) JobEnded: {'identifier': 'smartcart_description', 'rc': 0}
+[9.118685] (smartcart_gazebo) CommandEnded: {'returncode': 0}
+[9.134996] (-) TimerEvent: {}
+[9.232933] (smartcart_gazebo) JobEnded: {'identifier': 'smartcart_gazebo', 'rc': 0}
+[9.235086] (-) TimerEvent: {}
+[9.335787] (-) TimerEvent: {}
+[9.436140] (-) TimerEvent: {}
+[9.536520] (-) TimerEvent: {}
+[9.636956] (-) TimerEvent: {}
+[9.737929] (-) TimerEvent: {}
+[9.838320] (-) TimerEvent: {}
+[9.938820] (-) TimerEvent: {}
+[10.039231] (-) TimerEvent: {}
+[10.139613] (-) TimerEvent: {}
+[10.239963] (-) TimerEvent: {}
+[10.340321] (-) TimerEvent: {}
+[10.440735] (-) TimerEvent: {}
+[10.541135] (-) TimerEvent: {}
+[10.641636] (-) TimerEvent: {}
+[10.742285] (-) TimerEvent: {}
+[10.842998] (-) TimerEvent: {}
+[10.943591] (-) TimerEvent: {}
+[11.044110] (-) TimerEvent: {}
+[11.144537] (-) TimerEvent: {}
+[11.245172] (-) TimerEvent: {}
+[11.345757] (-) TimerEvent: {}
+[11.446184] (-) TimerEvent: {}
+[11.546581] (-) TimerEvent: {}
+[11.646981] (-) TimerEvent: {}
+[11.748032] (-) TimerEvent: {}
+[11.848459] (-) TimerEvent: {}
+[11.948881] (-) TimerEvent: {}
+[12.049339] (-) TimerEvent: {}
+[12.149816] (-) TimerEvent: {}
+[12.250217] (-) TimerEvent: {}
+[12.350651] (-) TimerEvent: {}
+[12.451141] (-) TimerEvent: {}
+[12.551685] (-) TimerEvent: {}
+[12.652111] (-) TimerEvent: {}
+[12.752521] (-) TimerEvent: {}
+[12.852899] (-) TimerEvent: {}
+[12.953301] (-) TimerEvent: {}
+[13.053747] (-) TimerEvent: {}
+[13.154710] (-) TimerEvent: {}
+[13.255287] (-) TimerEvent: {}
+[13.355635] (-) TimerEvent: {}
+[13.456006] (-) TimerEvent: {}
+[13.556445] (-) TimerEvent: {}
+[13.656843] (-) TimerEvent: {}
+[13.757304] (-) TimerEvent: {}
+[13.857773] (-) TimerEvent: {}
+[13.958275] (-) TimerEvent: {}
+[14.058692] (-) TimerEvent: {}
+[14.159042] (-) TimerEvent: {}
+[14.259439] (-) TimerEvent: {}
+[14.359806] (-) TimerEvent: {}
+[14.460283] (-) TimerEvent: {}
+[14.560814] (-) TimerEvent: {}
+[14.661373] (-) TimerEvent: {}
+[14.761802] (-) TimerEvent: {}
+[14.862185] (-) TimerEvent: {}
+[14.962651] (-) TimerEvent: {}
+[15.063108] (-) TimerEvent: {}
+[15.163475] (-) TimerEvent: {}
+[15.264032] (-) TimerEvent: {}
+[15.364644] (-) TimerEvent: {}
+[15.465034] (-) TimerEvent: {}
+[15.565411] (-) TimerEvent: {}
+[15.665796] (-) TimerEvent: {}
+[15.766151] (-) TimerEvent: {}
+[15.866560] (-) TimerEvent: {}
+[15.966970] (-) TimerEvent: {}
+[16.067493] (-) TimerEvent: {}
+[16.167914] (-) TimerEvent: {}
+[16.268324] (-) TimerEvent: {}
+[16.370092] (-) TimerEvent: {}
+[16.470928] (-) TimerEvent: {}
+[16.571404] (-) TimerEvent: {}
+[16.671843] (-) TimerEvent: {}
+[16.772284] (-) TimerEvent: {}
+[16.872661] (-) TimerEvent: {}
+[16.973076] (-) TimerEvent: {}
+[17.074366] (-) TimerEvent: {}
+[17.174899] (-) TimerEvent: {}
+[17.275316] (-) TimerEvent: {}
+[17.375715] (-) TimerEvent: {}
+[17.476151] (-) TimerEvent: {}
+[17.576759] (-) TimerEvent: {}
+[17.677339] (-) TimerEvent: {}
+[17.777746] (-) TimerEvent: {}
+[17.878121] (-) TimerEvent: {}
+[17.978545] (-) TimerEvent: {}
+[18.079281] (-) TimerEvent: {}
+[18.179748] (-) TimerEvent: {}
+[18.280226] (-) TimerEvent: {}
+[18.380768] (-) TimerEvent: {}
+[18.481508] (-) TimerEvent: {}
+[18.581951] (-) TimerEvent: {}
+[18.682496] (-) TimerEvent: {}
+[18.782881] (-) TimerEvent: {}
+[18.883277] (-) TimerEvent: {}
+[18.983674] (-) TimerEvent: {}
+[19.084029] (-) TimerEvent: {}
+[19.184408] (-) TimerEvent: {}
+[19.286295] (-) TimerEvent: {}
+[19.386731] (-) TimerEvent: {}
+[19.487165] (-) TimerEvent: {}
+[19.587717] (-) TimerEvent: {}
+[19.688346] (-) TimerEvent: {}
+[19.788780] (-) TimerEvent: {}
+[19.889186] (-) TimerEvent: {}
+[19.989558] (-) TimerEvent: {}
+[20.089976] (-) TimerEvent: {}
+[20.192971] (-) TimerEvent: {}
+[20.293430] (-) TimerEvent: {}
+[20.393846] (-) TimerEvent: {}
+[20.494263] (-) TimerEvent: {}
+[20.594674] (-) TimerEvent: {}
+[20.695286] (-) TimerEvent: {}
+[20.796027] (-) TimerEvent: {}
+[20.897046] (-) TimerEvent: {}
+[20.997502] (-) TimerEvent: {}
+[21.097989] (-) TimerEvent: {}
+[21.198492] (-) TimerEvent: {}
+[21.299203] (-) TimerEvent: {}
+[21.399735] (-) TimerEvent: {}
+[21.500091] (-) TimerEvent: {}
+[21.600488] (-) TimerEvent: {}
+[21.700836] (-) TimerEvent: {}
+[21.801327] (-) TimerEvent: {}
+[21.902531] (-) TimerEvent: {}
+[22.003176] (-) TimerEvent: {}
+[22.103666] (-) TimerEvent: {}
+[22.204121] (-) TimerEvent: {}
+[22.304720] (-) TimerEvent: {}
+[22.405383] (-) TimerEvent: {}
+[22.506005] (-) TimerEvent: {}
+[22.606568] (-) TimerEvent: {}
+[22.708405] (-) TimerEvent: {}
+[22.809327] (-) TimerEvent: {}
+[22.909812] (-) TimerEvent: {}
+[23.010434] (-) TimerEvent: {}
+[23.110810] (-) TimerEvent: {}
+[23.211205] (-) TimerEvent: {}
+[23.311563] (-) TimerEvent: {}
+[23.412005] (-) TimerEvent: {}
+[23.512746] (-) TimerEvent: {}
+[23.613198] (-) TimerEvent: {}
+[23.713668] (-) TimerEvent: {}
+[23.814019] (-) TimerEvent: {}
+[23.914425] (-) TimerEvent: {}
+[24.014856] (-) TimerEvent: {}
+[24.115329] (-) TimerEvent: {}
+[24.216043] (-) TimerEvent: {}
+[24.316871] (-) TimerEvent: {}
+[24.418297] (-) TimerEvent: {}
+[24.518891] (-) TimerEvent: {}
+[24.619347] (-) TimerEvent: {}
+[24.719749] (-) TimerEvent: {}
+[24.820356] (-) TimerEvent: {}
+[24.921180] (-) TimerEvent: {}
+[25.021661] (-) TimerEvent: {}
+[25.122034] (-) TimerEvent: {}
+[25.222800] (-) TimerEvent: {}
+[25.323496] (-) TimerEvent: {}
+[25.424637] (-) TimerEvent: {}
+[25.525461] (-) TimerEvent: {}
+[25.625863] (-) TimerEvent: {}
+[25.726260] (-) TimerEvent: {}
+[25.829335] (-) TimerEvent: {}
+[25.929953] (-) TimerEvent: {}
+[26.030838] (-) TimerEvent: {}
+[26.131399] (-) TimerEvent: {}
+[26.231843] (-) TimerEvent: {}
+[26.332294] (-) TimerEvent: {}
+[26.432640] (-) TimerEvent: {}
+[26.532998] (-) TimerEvent: {}
+[26.633458] (-) TimerEvent: {}
+[26.734088] (-) TimerEvent: {}
+[26.834572] (-) TimerEvent: {}
+[26.935567] (-) TimerEvent: {}
+[27.036078] (-) TimerEvent: {}
+[27.136688] (-) TimerEvent: {}
+[27.237152] (-) TimerEvent: {}
+[27.337593] (-) TimerEvent: {}
+[27.437977] (-) TimerEvent: {}
+[27.538385] (-) TimerEvent: {}
+[27.638765] (-) TimerEvent: {}
+[27.739218] (-) TimerEvent: {}
+[27.839578] (-) TimerEvent: {}
+[27.940043] (-) TimerEvent: {}
+[28.040608] (-) TimerEvent: {}
+[28.141579] (-) TimerEvent: {}
+[28.242035] (-) TimerEvent: {}
+[28.342442] (-) TimerEvent: {}
+[28.442859] (-) TimerEvent: {}
+[28.543240] (-) TimerEvent: {}
+[28.643679] (-) TimerEvent: {}
+[28.745520] (-) TimerEvent: {}
+[28.846524] (-) TimerEvent: {}
+[28.947268] (-) TimerEvent: {}
+[29.047728] (-) TimerEvent: {}
+[29.148262] (-) TimerEvent: {}
+[29.248641] (-) TimerEvent: {}
+[29.349056] (-) TimerEvent: {}
+[29.449541] (-) TimerEvent: {}
+[29.549966] (-) TimerEvent: {}
+[29.650402] (-) TimerEvent: {}
+[29.750784] (-) TimerEvent: {}
+[29.851206] (-) TimerEvent: {}
+[29.952175] (-) TimerEvent: {}
+[30.052681] (-) TimerEvent: {}
+[30.153129] (-) TimerEvent: {}
+[30.253603] (-) TimerEvent: {}
+[30.354061] (-) TimerEvent: {}
+[30.454451] (-) TimerEvent: {}
+[30.554900] (-) TimerEvent: {}
+[30.655298] (-) TimerEvent: {}
+[30.755948] (-) TimerEvent: {}
+[30.857192] (-) TimerEvent: {}
+[30.957873] (-) TimerEvent: {}
+[31.058740] (-) TimerEvent: {}
+[31.159116] (-) TimerEvent: {}
+[31.259472] (-) TimerEvent: {}
+[31.359968] (-) TimerEvent: {}
+[31.460562] (-) TimerEvent: {}
+[31.561952] (-) TimerEvent: {}
+[31.662837] (-) TimerEvent: {}
+[31.763283] (-) TimerEvent: {}
+[31.863836] (-) TimerEvent: {}
+[31.964308] (-) TimerEvent: {}
+[32.064794] (-) TimerEvent: {}
+[32.165360] (-) TimerEvent: {}
+[32.265805] (-) TimerEvent: {}
+[32.366235] (-) TimerEvent: {}
+[32.467212] (-) TimerEvent: {}
+[32.567640] (-) TimerEvent: {}
+[32.668306] (-) TimerEvent: {}
+[32.769342] (-) TimerEvent: {}
+[32.869802] (-) TimerEvent: {}
+[32.970236] (-) TimerEvent: {}
+[33.070761] (-) TimerEvent: {}
+[33.172455] (-) TimerEvent: {}
+[33.272947] (-) TimerEvent: {}
+[33.373563] (-) TimerEvent: {}
+[33.474321] (-) TimerEvent: {}
+[33.575350] (-) TimerEvent: {}
+[33.675822] (-) TimerEvent: {}
+[33.776291] (-) TimerEvent: {}
+[33.876835] (-) TimerEvent: {}
+[33.977474] (-) TimerEvent: {}
+[34.078375] (-) TimerEvent: {}
+[34.178864] (-) TimerEvent: {}
+[34.279413] (-) TimerEvent: {}
+[34.380009] (-) TimerEvent: {}
+[34.480539] (-) TimerEvent: {}
+[34.580999] (-) TimerEvent: {}
+[34.681457] (-) TimerEvent: {}
+[34.782054] (-) TimerEvent: {}
+[34.883036] (-) TimerEvent: {}
+[34.984896] (-) TimerEvent: {}
+[35.087153] (-) TimerEvent: {}
+[35.188779] (-) TimerEvent: {}
+[35.290552] (-) TimerEvent: {}
+[35.390991] (-) TimerEvent: {}
+[35.491461] (-) TimerEvent: {}
+[35.591810] (-) TimerEvent: {}
+[35.692193] (-) TimerEvent: {}
+[35.792562] (-) TimerEvent: {}
+[35.893118] (-) TimerEvent: {}
+[35.995695] (-) TimerEvent: {}
+[36.096782] (-) TimerEvent: {}
+[36.197308] (-) TimerEvent: {}
+[36.297987] (-) TimerEvent: {}
+[36.399097] (-) TimerEvent: {}
+[36.499630] (-) TimerEvent: {}
+[36.600008] (-) TimerEvent: {}
+[36.701314] (-) TimerEvent: {}
+[36.801806] (-) TimerEvent: {}
+[36.902329] (-) TimerEvent: {}
+[37.005180] (-) TimerEvent: {}
+[37.105714] (-) TimerEvent: {}
+[37.206151] (-) TimerEvent: {}
+[37.306568] (-) TimerEvent: {}
+[37.407178] (-) TimerEvent: {}
+[37.508065] (-) TimerEvent: {}
+[37.608541] (-) TimerEvent: {}
+[37.708967] (-) TimerEvent: {}
+[37.809313] (-) TimerEvent: {}
+[37.910398] (-) TimerEvent: {}
+[38.010871] (-) TimerEvent: {}
+[38.111268] (-) TimerEvent: {}
+[38.211734] (-) TimerEvent: {}
+[38.312281] (-) TimerEvent: {}
+[38.412713] (-) TimerEvent: {}
+[38.513160] (-) TimerEvent: {}
+[38.613567] (-) TimerEvent: {}
+[38.714011] (-) TimerEvent: {}
+[38.814431] (-) TimerEvent: {}
+[38.914826] (-) TimerEvent: {}
+[39.015358] (-) TimerEvent: {}
+[39.116189] (-) TimerEvent: {}
+[39.216761] (-) TimerEvent: {}
+[39.317203] (-) TimerEvent: {}
+[39.417582] (-) TimerEvent: {}
+[39.517944] (-) TimerEvent: {}
+[39.618354] (-) TimerEvent: {}
+[39.718734] (-) TimerEvent: {}
+[39.819180] (-) TimerEvent: {}
+[39.919873] (-) TimerEvent: {}
+[40.020929] (-) TimerEvent: {}
+[40.121333] (-) TimerEvent: {}
+[40.221745] (-) TimerEvent: {}
+[40.322223] (-) TimerEvent: {}
+[40.422734] (-) TimerEvent: {}
+[40.523191] (-) TimerEvent: {}
+[40.623596] (-) TimerEvent: {}
+[40.724032] (-) TimerEvent: {}
+[40.824505] (-) TimerEvent: {}
+[40.924879] (-) TimerEvent: {}
+[41.025336] (-) TimerEvent: {}
+[41.125730] (-) TimerEvent: {}
+[41.226106] (-) TimerEvent: {}
+[41.326480] (-) TimerEvent: {}
+[41.426885] (-) TimerEvent: {}
+[41.527325] (-) TimerEvent: {}
+[41.627730] (-) TimerEvent: {}
+[41.728086] (-) TimerEvent: {}
+[41.828490] (-) TimerEvent: {}
+[41.928905] (-) TimerEvent: {}
+[42.029669] (-) TimerEvent: {}
+[42.130120] (-) TimerEvent: {}
+[42.230699] (-) TimerEvent: {}
+[42.331147] (-) TimerEvent: {}
+[42.431735] (-) TimerEvent: {}
+[42.532517] (-) TimerEvent: {}
+[42.633114] (-) TimerEvent: {}
+[42.733543] (-) TimerEvent: {}
+[42.833961] (-) TimerEvent: {}
+[42.934334] (-) TimerEvent: {}
+[43.034879] (-) TimerEvent: {}
+[43.135781] (-) TimerEvent: {}
+[43.237069] (-) TimerEvent: {}
+[43.337520] (-) TimerEvent: {}
+[43.437945] (-) TimerEvent: {}
+[43.538426] (-) TimerEvent: {}
+[43.639911] (-) TimerEvent: {}
+[43.740426] (-) TimerEvent: {}
+[43.840942] (-) TimerEvent: {}
+[43.941312] (-) TimerEvent: {}
+[44.042356] (-) TimerEvent: {}
+[44.142769] (-) TimerEvent: {}
+[44.243117] (-) TimerEvent: {}
+[44.343536] (-) TimerEvent: {}
+[44.443934] (-) TimerEvent: {}
+[44.544959] (-) TimerEvent: {}
+[44.645413] (-) TimerEvent: {}
+[44.745834] (-) TimerEvent: {}
+[44.846255] (-) TimerEvent: {}
+[44.946700] (-) TimerEvent: {}
+[45.047114] (-) TimerEvent: {}
+[45.147529] (-) TimerEvent: {}
+[45.247944] (-) TimerEvent: {}
+[45.348331] (-) TimerEvent: {}
+[45.448731] (-) TimerEvent: {}
+[45.549127] (-) TimerEvent: {}
+[45.649532] (-) TimerEvent: {}
+[45.749940] (-) TimerEvent: {}
+[45.850321] (-) TimerEvent: {}
+[45.950746] (-) TimerEvent: {}
+[46.051163] (-) TimerEvent: {}
+[46.151613] (-) TimerEvent: {}
+[46.251951] (-) TimerEvent: {}
+[46.352301] (-) TimerEvent: {}
+[46.452842] (-) TimerEvent: {}
+[46.553413] (-) TimerEvent: {}
+[46.653869] (-) TimerEvent: {}
+[46.754303] (-) TimerEvent: {}
+[46.854681] (-) TimerEvent: {}
+[46.955156] (-) TimerEvent: {}
+[47.055861] (-) TimerEvent: {}
+[47.158077] (-) TimerEvent: {}
+[47.258521] (-) TimerEvent: {}
+[47.358960] (-) TimerEvent: {}
+[47.459460] (-) TimerEvent: {}
+[47.560624] (-) TimerEvent: {}
+[47.661667] (-) TimerEvent: {}
+[47.762113] (-) TimerEvent: {}
+[47.862568] (-) TimerEvent: {}
+[47.963102] (-) TimerEvent: {}
+[48.063705] (-) TimerEvent: {}
+[48.164136] (-) TimerEvent: {}
+[48.264590] (-) TimerEvent: {}
+[48.365010] (-) TimerEvent: {}
+[48.465477] (-) TimerEvent: {}
+[48.566775] (-) TimerEvent: {}
+[48.667402] (-) TimerEvent: {}
+[48.767871] (-) TimerEvent: {}
+[48.868278] (-) TimerEvent: {}
+[48.968959] (-) TimerEvent: {}
+[49.070459] (-) TimerEvent: {}
+[49.171693] (-) TimerEvent: {}
+[49.273493] (-) TimerEvent: {}
+[49.373941] (-) TimerEvent: {}
+[49.474407] (-) TimerEvent: {}
+[49.575017] (-) TimerEvent: {}
+[49.675483] (-) TimerEvent: {}
+[49.775938] (-) TimerEvent: {}
+[49.876335] (-) TimerEvent: {}
+[49.976866] (-) TimerEvent: {}
+[50.077463] (-) TimerEvent: {}
+[50.178268] (-) TimerEvent: {}
+[50.278720] (-) TimerEvent: {}
+[50.379157] (-) TimerEvent: {}
+[50.479556] (-) TimerEvent: {}
+[50.581324] (-) TimerEvent: {}
+[50.681893] (-) TimerEvent: {}
+[50.782876] (-) TimerEvent: {}
+[50.883314] (-) TimerEvent: {}
+[50.983847] (-) TimerEvent: {}
+[51.084428] (-) TimerEvent: {}
+[51.184931] (-) TimerEvent: {}
+[51.285709] (-) TimerEvent: {}
+[51.386197] (-) TimerEvent: {}
+[51.486774] (-) TimerEvent: {}
+[51.587143] (-) TimerEvent: {}
+[51.687764] (-) TimerEvent: {}
+[51.788541] (-) TimerEvent: {}
+[51.888976] (-) TimerEvent: {}
+[51.989413] (-) TimerEvent: {}
+[52.089821] (-) TimerEvent: {}
+[52.190228] (-) TimerEvent: {}
+[52.290668] (-) TimerEvent: {}
+[52.391324] (-) TimerEvent: {}
+[52.492202] (-) TimerEvent: {}
+[52.592621] (-) TimerEvent: {}
+[52.693056] (-) TimerEvent: {}
+[52.793536] (-) TimerEvent: {}
+[52.893967] (-) TimerEvent: {}
+[52.994454] (-) TimerEvent: {}
+[53.095058] (-) TimerEvent: {}
+[53.195804] (-) TimerEvent: {}
+[53.296322] (-) TimerEvent: {}
+[53.396773] (-) TimerEvent: {}
+[53.497217] (-) TimerEvent: {}
+[53.598071] (-) TimerEvent: {}
+[53.699447] (-) TimerEvent: {}
+[53.800284] (-) TimerEvent: {}
+[53.901232] (-) TimerEvent: {}
+[54.002345] (-) TimerEvent: {}
+[54.102920] (-) TimerEvent: {}
+[54.203267] (-) TimerEvent: {}
+[54.303670] (-) TimerEvent: {}
+[54.404639] (-) TimerEvent: {}
+[54.505339] (-) TimerEvent: {}
+[54.605708] (-) TimerEvent: {}
+[54.706059] (-) TimerEvent: {}
+[54.806447] (-) TimerEvent: {}
+[54.906916] (-) TimerEvent: {}
+[54.960936] (smartcart_human) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/smartcart_human', 'build', '--build-base', '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/build', 'install', '--record', '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/install.log', '--install-scripts', '$base/lib/smartcart_human', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/src/smartcart_human', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'XSCHEM_LIBRARY_PATH': '/home/hari-aswath/skywater-pdk/libraries/sky130_fd_pr/latest/xschem', 'USER': 'hari-aswath', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hari-aswath', 'OLDPWD': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2241', 'PDK_ROOT': '/home/hari-aswath/skywater-pdk', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hari-aswath', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hari-aswath', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/hari-aswath/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hari-aswath/.local/bin:/home/hari-aswath/.local/bin:/home/hari-aswath/.local/bin', 'SESSION_MANAGER': 'local/hari-aswath-X555LA:@/tmp/.ICE-unix/2208,unix/hari-aswath-X555LA:/tmp/.ICE-unix/2208', 'PDK': 'sky130A', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/bfa8dc72_465c_477b_9892_d51b96956934', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.419TV3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.120', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:407770d3-04db-4d2c-a117-b3da966d7ec8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_gazebo:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[55.007030] (-) TimerEvent: {}
+[55.107479] (-) TimerEvent: {}
+[55.208113] (-) TimerEvent: {}
+[55.309154] (-) TimerEvent: {}
+[55.409631] (-) TimerEvent: {}
+[55.510125] (-) TimerEvent: {}
+[55.611314] (-) TimerEvent: {}
+[55.712437] (-) TimerEvent: {}
+[55.813008] (-) TimerEvent: {}
+[55.913530] (-) TimerEvent: {}
+[56.014085] (-) TimerEvent: {}
+[56.114655] (-) TimerEvent: {}
+[56.129611] (smartcart_human) StdoutLine: {'line': b'running egg_info\n'}
+[56.214775] (-) TimerEvent: {}
+[56.225794] (smartcart_human) StdoutLine: {'line': b'writing ../../build/smartcart_human/smartcart_human.egg-info/PKG-INFO\n'}
+[56.242935] (smartcart_human) StdoutLine: {'line': b'writing dependency_links to ../../build/smartcart_human/smartcart_human.egg-info/dependency_links.txt\n'}
+[56.243878] (smartcart_human) StdoutLine: {'line': b'writing requirements to ../../build/smartcart_human/smartcart_human.egg-info/requires.txt\n'}
+[56.245264] (smartcart_human) StdoutLine: {'line': b'writing top-level names to ../../build/smartcart_human/smartcart_human.egg-info/top_level.txt\n'}
+[56.315571] (-) TimerEvent: {}
+[56.417012] (-) TimerEvent: {}
+[56.438654] (smartcart_human) StdoutLine: {'line': b"reading manifest file '../../build/smartcart_human/smartcart_human.egg-info/SOURCES.txt'\n"}
+[56.458102] (smartcart_human) StdoutLine: {'line': b"writing manifest file '../../build/smartcart_human/smartcart_human.egg-info/SOURCES.txt'\n"}
+[56.458644] (smartcart_human) StdoutLine: {'line': b'running build\n'}
+[56.459008] (smartcart_human) StdoutLine: {'line': b'running build_py\n'}
+[56.487610] (smartcart_human) StdoutLine: {'line': b'running install\n'}
+[56.508473] (smartcart_human) StdoutLine: {'line': b'running install_lib\n'}
+[56.517126] (-) TimerEvent: {}
+[56.617559] (-) TimerEvent: {}
+[56.620641] (smartcart_human) StdoutLine: {'line': b'running install_data\n'}
+[56.641210] (smartcart_human) StdoutLine: {'line': b'running install_egg_info\n'}
+[56.717675] (-) TimerEvent: {}
+[56.747458] (smartcart_human) StdoutLine: {'line': b"removing '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages/smartcart_human-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[56.748293] (smartcart_human) StdoutLine: {'line': b'Copying ../../build/smartcart_human/smartcart_human.egg-info to /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human/lib/python3.12/site-packages/smartcart_human-0.0.0-py3.12.egg-info\n'}
+[56.766902] (smartcart_human) StdoutLine: {'line': b'running install_scripts\n'}
+[56.817799] (-) TimerEvent: {}
+[56.918276] (-) TimerEvent: {}
+[57.018815] (-) TimerEvent: {}
+[57.119401] (-) TimerEvent: {}
+[57.220348] (-) TimerEvent: {}
+[57.321350] (-) TimerEvent: {}
+[57.336309] (smartcart_human) StdoutLine: {'line': b"writing list of installed files to '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_human/install.log'\n"}
+[57.421904] (-) TimerEvent: {}
+[57.435743] (smartcart_human) CommandEnded: {'returncode': 0}
+[57.458851] (smartcart_human) JobEnded: {'identifier': 'smartcart_human', 'rc': 0}
+[57.461810] (-) EventReactorShutdown: {}

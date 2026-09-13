@@ -1,0 +1,25 @@
+[0.432s] Invoking command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description -- -j4 -l4
+[2.625s] Invoked command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description -- -j4 -l4
+[2.644s] Invoking command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description
+[2.688s] -- Install configuration: ""
+[2.692s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/urdf
+[2.694s] -- Installing: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/urdf/smartcart.urdf.xacro
+[2.695s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/launch
+[2.714s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/meshes
+[2.714s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/config
+[2.715s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/ament_index/resource_index/package_run_dependencies/smartcart_description
+[2.715s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/ament_index/resource_index/parent_prefix_path/smartcart_description
+[2.716s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/environment/ament_prefix_path.sh
+[2.716s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/environment/ament_prefix_path.dsv
+[2.719s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/environment/path.sh
+[2.721s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/environment/path.dsv
+[2.721s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/local_setup.bash
+[2.722s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/local_setup.sh
+[2.722s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/local_setup.zsh
+[2.722s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/local_setup.dsv
+[2.723s] -- Installing: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.dsv
+[2.732s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/ament_index/resource_index/packages/smartcart_description
+[2.733s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/cmake/smartcart_descriptionConfig.cmake
+[2.733s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/cmake/smartcart_descriptionConfig-version.cmake
+[2.733s] -- Up-to-date: /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_description/share/smartcart_description/package.xml
+[2.761s] Invoked command in '/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/install/smartcart_human:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hari-aswath/Projects/smartcart/simulation/smartcart_ws/build/smartcart_description

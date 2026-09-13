@@ -113,6 +113,20 @@ def generate_launch_description():
 
 
     # =========================
+    # HUMAN POSE SERVICE BRIDGE
+    # =========================
+
+    human_pose_bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        arguments=[
+            '/world/smartcart_world/set_pose@ros_gz_interfaces/srv/SetEntityPose'
+        ],
+        output='screen'
+    )
+
+
+    # =========================
     # LAUNCH EVERYTHING
     # =========================
 
@@ -121,5 +135,6 @@ def generate_launch_description():
         robot_state_publisher,
         spawn_robot,
         lidar_bridge,
-        camera_bridge
+        camera_bridge,
+        human_pose_bridge
     ])

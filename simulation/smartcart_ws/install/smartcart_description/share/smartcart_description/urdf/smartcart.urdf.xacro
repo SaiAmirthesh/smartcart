@@ -308,7 +308,7 @@
 
     <sensor
       name="lidar"
-      type="gpu_lidar">
+      type="lidar">
 
       <topic>/scan</topic>
 
