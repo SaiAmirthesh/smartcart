@@ -1,0 +1,87 @@
+# ====================================================================
+# WolfBot Physical Hardware Parameters Configuration
+# ====================================================================
+
+# Motor Driver & Microcontroller Serial Interface
+wolfbot_motor_driver:
+  ros__parameters:
+    port: "/dev/ttyUSB0"          # Motor controller serial port (or /dev/wolfbot_motor)
+    baud_rate: 115200             # Microcontroller baud rate
+    wheel_separation: 0.70        # Track width (meters)
+    wheel_radius: 0.15            # Drive wheel radius (meters)
+    max_linear_speed: 0.60        # Safe maximum linear velocity (m/s)
+    max_angular_speed: 1.20       # Safe maximum angular velocity (rad/s)
+    cmd_vel_timeout: 0.50         # Motor safety watchdog timeout (seconds)
+    publish_tf: true              # Broadcast odom -> base_footprint transform
+    odom_frame: "odom"
+    base_frame: "base_footprint"
+    simulate_hardware: false      # Set to true for dry-runs without physical serial
+
+# 2D LiDAR Driver
+wolfbot_lidar_node:
+  ros__parameters:
+    port: "/dev/ttyUSB1"          # LiDAR serial port (or /dev/wolfbot_lidar)
+    baud_rate: 115200             # RPLiDAR / generic baud rate
+    frame_id: "lidar_link"
+    scan_topic: "/scan"
+    min_range: 0.15               # meters
+    max_range: 12.0               # meters
+    scan_frequency: 10.0          # Hz
+    samples_per_scan: 360
+    simulate_hardware: false
+
+# LiDAR Collision Safety Watchdog
+wolfbot_lidar_safety_stop:
+  ros__parameters:
+    input_cmd_topic: "/cmd_vel_raw"
+    output_cmd_topic: "/cmd_vel"
+    scan_topic: "/scan"
+    emergency_stop_distance: 0.45  # Stop immediately if obstacle closer than 45cm
+    slowdown_distance: 0.80        # Proportional slowdown between 45cm and 80cm
+    front_cone_angle_deg: 35.0     # ±35 degrees detection cone
+    min_valid_distance: 0.15
+
+# Physical Camera Driver
+wolfbot_camera_node:
+  ros__parameters:
+    device_id: 0                  # /dev/video0
+    width: 640
+    height: 480
+    fps: 30.0
+    frame_id: "camera_optical_link"
+    image_topic: "/camera/image_raw"
+    camera_info_topic: "/camera/camera_info"
+    simulate_camera: false
+
+# Customer Person Tracker
+wolfbot_person_tracker:
+  ros__parameters:
+    camera_topic: "/camera/image_raw"
+    scan_topic: "/scan"
+    target_pose_topic: "/target/pose"
+    target_status_topic: "/target/status"
+    debug_image_topic: "/camera/detections_image"
+    hfov_deg: 60.0
+    max_follow_distance: 4.5
+    min_follow_distance: 0.5
+    lost_timeout: 1.8
+
+# Autonomous Human Following Controller
+wolfbot_follow_controller:
+  ros__parameters:
+    target_pose_topic: "/target/pose"
+    cmd_vel_topic: "/cmd_vel_raw"
+    scan_topic: "/scan"
+    target_distance: 1.20         # Target standoff distance from customer (meters)
+    deadband_distance: 0.08       # Positional deadband (meters)
+    deadband_angle: 0.08          # Angular deadband (radians)
+    k_distance: 0.65              # Proportional distance gain
+    k_angle: 1.10                 # Proportional angular gain
+    max_linear_speed: 0.45        # Max forward velocity (m/s)
+    min_linear_speed: 0.15        # Minimum velocity to overcome floor friction
+    max_angular_speed: 0.90       # Max rotation velocity (rad/s)
+    min_angular_speed: 0.25       # Minimum rotation velocity to overcome skid friction
+    max_linear_accel: 0.40        # Max linear acceleration (m/s^2)
+    max_angular_accel: 1.20       # Max angular acceleration (rad/s^2)
+    target_timeout: 1.50          # Lost target coast/stop timeout (seconds)
+    obstacle_stop_distance: 0.45

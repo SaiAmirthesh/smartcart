@@ -16,6 +16,12 @@ venv/
 smartcart_ws/build/
 smartcart_ws/install/
 smartcart_ws/log/
+Wolfbot/build/
+Wolfbot/install/
+Wolfbot/log/
+build/
+install/
+log/
 
 # Node
 node_modules/
